@@ -80,7 +80,7 @@ const Pengaturan = () => {
       });
 
       if (newPassword) {
-        await fetch("http://localhost:5000/api/user/change-password", {
+        await fetch("https://flowchart-pintar-production.up.railway.app/api/user/change-password", {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
@@ -97,7 +97,7 @@ const Pengaturan = () => {
         formData.append("profile", profileFile);
 
         await fetch(
-          "http://localhost:5000/api/user/profile-photo",
+          "https://flowchart-pintar-production.up.railway.app/api/user/profile-photo",
           {
             method: "PUT",
             body: formData,

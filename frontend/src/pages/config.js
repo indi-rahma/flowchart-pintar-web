@@ -1,2 +1,2 @@
 export const API_BASE =
-  "http://localhost:5000";
+  "https://flowchart-pintar-production.up.railway.app";
